@@ -7,12 +7,16 @@ module.exports = {
   ],
   theme: {
     extend: {
-      
-      colors:{
-        "dark-gray": "121212",
+      dropShadow: {
+        '3xl': '0 12px 4px rgba(0, 0, 0)',
+      },
+      colors: {
+        "dark-gray": "#121212",
         "stone-gray": "#898787",
         "navi-blue": "#5E80F8",
+        "amethyst": "#8473B1",
         white: "#FFFFFF",
+        black: "#000000",
       },
     },
   },
