@@ -25,7 +25,7 @@ const Home = () => {
 
         <p className="flex flex-col items-center text-4xl md:text-8xl text-amethyst drop-shadow-3xl pb-4">STANLEY LEW</p>
         <div className="flex justify-center">
-          <button className="z-50" class = "animate-bounce">
+          <button className="z-50 animate-bounce">
             <svg xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53" fill="none">
           <g filter="url(#filter0_d_20_52)">
             <circle cx="26.5" cy="22.5" r="22.5" fill="#8474B1"/>
