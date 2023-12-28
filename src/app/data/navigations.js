@@ -1,4 +1,5 @@
-export const navigation = [
+// may or may not use this file we'll see
+export const navigations = [
     {
         text: "HOME",
         link: "/#home",

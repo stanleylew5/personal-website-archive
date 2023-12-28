@@ -1,15 +1,54 @@
+import React from "react";
+import Panels from "./Panels";
 import img1 from "../../public/images/professional.png";
-import { navigation } from "@/app/data/navigation";
 
 const Home = () => {
+
   return (
-    <div className="bg-dark-gray h-screen flex flex-col items-center justify-center p-12">
-      <p className=" text-3xl md:text-8xl text-stone-gray drop-shadow-3xl">SOFTWARE ENGINEER</p>
-      <div className="mt-8 mb-8 text-center">
-        <img src={img1.src} alt="profile pic" className="w-1/2 h-auto mx-auto drop-shadow-3xl" />
+    <div className="bg-dark-gray h-screen">
+      <div className=" text-3xl flex justify-center space-x-16 pt-8 pb-8 ">
+        <button className="text-lilacblue drop-shadow-4xl hover:text-blue-600">HOME</button>
+        <button className="text-offwhite drop-shadow-5xl hover:text-gray-400">ABOUT</button>
+        <button className="text-offwhite drop-shadow-5xl hover:text-gray-400">SKILLS</button>
+        <button className="text-offwhite drop-shadow-5xl hover:text-gray-400">PROJECTS</button>
+        <button className="text-offwhite drop-shadow-5xl hover:text-gray-400">RESUME</button>
+        <button className="text-offwhite drop-shadow-5xl hover:text-gray-400">CONTACT</button>
       </div>
-      <p className="text-4xl md:text-8xl text-amethyst drop-shadow-3xl">STANLEY LEW</p>
+
+      
+      <Panels/>
+      <p className="flex flex-col text-3xl md:text-8xl text-stone-gray drop-shadow-3xl items-center">SOFTWARE ENGINEER</p>
+      
+      <div>
+        <img src={img1.src} id = "pfp" alt="profile pic" className="mx-auto mt-6 mb-6 text-center w-1/4 drop-shadow-3xl" />
+      </div>
+
+        <p className="flex flex-col items-center text-4xl md:text-8xl text-amethyst drop-shadow-3xl pb-4">STANLEY LEW</p>
+        <div className="flex justify-center">
+          <button className="z-50" class = "animate-bounce">
+            <svg xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53" fill="none">
+          <g filter="url(#filter0_d_20_52)">
+            <circle cx="26.5" cy="22.5" r="22.5" fill="#8474B1"/>
+          </g>
+          <path d="M38.0217 17.5109L26.5109 29.0217L15 17.5109" stroke="#2B2929" stroke-width="4"/>
+          <defs>
+            <filter id="filter0_d_20_52" x="0" y="0" width="53" height="53" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+              <feOffset dy="4"/>
+              <feGaussianBlur stdDeviation="2"/>
+              <feComposite in2="hardAlpha" operator="out"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_20_52"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_20_52" result="shape"/>
+            </filter>
+          </defs>
+            </svg>
+          </button>
+          
+        </div>
     </div>
+    
   );
 };
 
