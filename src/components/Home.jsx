@@ -1,4 +1,6 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
 import pfp from "../../public/images/psp.png";
 import leftpanel1 from "../../public/panels/leftpanel1.svg"
 import leftpanel2 from "../../public/panels/leftpanel2.svg"
@@ -25,12 +27,65 @@ const Home = () => {
       
       <div className="grid grid-cols-1">
         <div>
-          <img src={leftpanel1.src} className="absolute h-mdoutpanel ml-leftoutpanel mt-10"/>
-          <img src={leftpanel2.src} className="absolute z-25 h-mdmidpanel ml-leftmidpanel mt-6"/>
-          <img src={leftpanel3.src} className="absolute z-50 h-mdinpanel ml-leftinpanel mt-2"/>
-          <img src={rightpanel1.src} className="absolute h-mdoutpanel ml-rightoutpanel mt-10"/>
-          <img src={rightpanel2.src} className="absolute z-25 h-mdmidpanel ml-rightmidpanel mt-6"/>
-          <img src={rightpanel3.src} className="absolute z-50 h-mdinpanel ml-rightinpanel mt-2"/>
+          <motion.img
+            src={leftpanel1.src} 
+            className="absolute h-mdoutpanel ml-leftoutpanel mt-10"
+            initial={{x: 80, opacity: 0}}
+            animate={{x: 0, opacity: 1}}
+            transition={{
+              x: {type: 'tween', ease: 'easeOut', duration: 1.4},
+              opacity: {type: 'tween', ease: 'easeOut', duration: 1.4},
+            }}
+          />
+          <motion.img
+            src={leftpanel2.src} 
+            className="absolute z-25 h-mdmidpanel ml-leftmidpanel mt-6"
+            initial={{x: 100, opacity: 0}}
+            animate={{x: 0, opacity: 1}}
+            transition={{
+              x: {type: 'tween', ease: 'easeOut', duration: 1},
+              opacity: {type: 'tween', ease: 'easeOut', duration: 1},
+            }}
+          />
+          <motion.img
+            src={leftpanel3.src} 
+            className="absolute z-50 h-mdinpanel ml-leftinpanel mt-2"
+            initial={{x: 100, opacity: 0}}
+            animate={{x: 0, opacity: 1}}
+            transition={{
+              x: {type: 'tween', ease: 'easeOut', duration: 0.75},
+              opacity: {type: 'tween', ease: 'easeOut', duration: 0.75},
+            }}
+          />
+          <motion.img
+            src={rightpanel1.src} className="absolute h-mdoutpanel ml-rightoutpanel mt-10"
+            initial={{x: -80, opacity: 0}}
+            animate={{x: 0, opacity: 1}}
+            transition={{
+              x: {type: 'tween', ease: 'easeOut', duration: 1.4},
+              opacity: {type: 'tween', ease: 'easeOut', duration: 1.4},
+            }}
+          />
+          <motion.img
+            src={rightpanel2.src} 
+            className="absolute z-25 h-mdmidpanel ml-rightmidpanel mt-6"
+            initial={{x: -100, opacity: 0}}
+            animate={{x: 0, opacity: 1}}
+            transition={{
+              x: {type: 'tween', ease: 'easeOut', duration: 1},
+              opacity: {type: 'tween', ease: 'easeOut', duration: 1},
+            }}
+          />
+          <motion.img
+            src={rightpanel3.src} 
+            className="absolute z-50 h-mdinpanel ml-rightinpanel mt-2"
+            initial={{x: -100, opacity: 0}}
+            animate={{x: 0, opacity: 1}}
+            transition={{
+              x: {type: 'tween', ease: 'easeOut', duration: 0.75},
+              opacity: {type: 'tween', ease: 'easeOut', duration: 0.75},
+            }}
+          />
           <img src={pfp.src} id = "psp" alt="profile pic" className="mx-auto my-10 text-center w-1/4 drop-shadow-3xl" />
           
         </div>
