@@ -1,12 +1,17 @@
 import React from "react";
-import Panels from "./Panels";
-import img1 from "../../public/images/professional.png";
+import pfp from "../../public/images/psp.png";
+import leftpanel1 from "../../public/panels/leftpanel1.svg"
+import leftpanel2 from "../../public/panels/leftpanel2.svg"
+import leftpanel3 from "../../public/panels/leftpanel3.svg"
+import rightpanel1 from "../../public/panels/rightpanel1.svg"
+import rightpanel2 from "../../public/panels/rightpanel2.svg"
+import rightpanel3 from "../../public/panels/rightpanel3.svg"
 
 const Home = () => {
 
   return (
     <div className="bg-dark-gray h-screen">
-      <div className=" text-3xl flex justify-center space-x-16 pt-8 pb-8 ">
+      <div className=" text-4xl flex justify-center space-x-16 pt-6 pb-4">
         <button className="text-lilacblue drop-shadow-4xl hover:text-blue-600">HOME</button>
         <button className="text-offwhite drop-shadow-5xl hover:text-gray-400">ABOUT</button>
         <button className="text-offwhite drop-shadow-5xl hover:text-gray-400">SKILLS</button>
@@ -15,12 +20,20 @@ const Home = () => {
         <button className="text-offwhite drop-shadow-5xl hover:text-gray-400">CONTACT</button>
       </div>
 
-      
-      <Panels/>
       <p className="flex flex-col text-3xl md:text-8xl text-stone-gray drop-shadow-3xl items-center">SOFTWARE ENGINEER</p>
+     
       
-      <div>
-        <img src={img1.src} id = "pfp" alt="profile pic" className="mx-auto mt-6 mb-6 text-center w-1/4 drop-shadow-3xl" />
+      <div className="grid grid-cols-1">
+        <div>
+          <img src={leftpanel1.src} className="absolute h-mdoutpanel ml-leftoutpanel mt-10"/>
+          <img src={leftpanel2.src} className="absolute z-25 h-mdmidpanel ml-leftmidpanel mt-6"/>
+          <img src={leftpanel3.src} className="absolute z-50 h-mdinpanel ml-leftinpanel mt-2"/>
+          <img src={rightpanel1.src} className="absolute h-mdoutpanel ml-rightoutpanel mt-10"/>
+          <img src={rightpanel2.src} className="absolute z-25 h-mdmidpanel ml-rightmidpanel mt-6"/>
+          <img src={rightpanel3.src} className="absolute z-50 h-mdinpanel ml-rightinpanel mt-2"/>
+          <img src={pfp.src} id = "psp" alt="profile pic" className="mx-auto my-10 text-center w-1/4 drop-shadow-3xl" />
+          
+        </div>
       </div>
 
         <p className="flex flex-col items-center text-4xl md:text-8xl text-amethyst drop-shadow-3xl pb-4">STANLEY LEW</p>
