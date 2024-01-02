@@ -1,0 +1,17 @@
+.homecolor{
+    color: #5E80F8;
+}
+.offwhite{
+    color: #C2C2C2;
+}
+.hoverBlue800:hover {
+    color: rgb(30 64 175);
+  }
+.hoverGray500:hover{
+    color: rgb(107 114 128);
+}
+/* this is for when I work on the changing colors of where the page is on in nav bar
+.activechecker{
+    color: #5E80F8;
+}
+*/

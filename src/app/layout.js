@@ -1,6 +1,5 @@
 import { Lalezar } from 'next/font/google'
 import './globals.css'
-
 const inter = Lalezar({ subsets: ['latin'], weight: '400' })
 
 export const metadata = {

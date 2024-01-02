@@ -10,7 +10,7 @@ module.exports = {
       dropShadow: {
         '3xl': '0 12px 4px rgba(0, 0, 0)',
         '4xl': '0px 0px 4px rgba(0, 0, 0)',
-        '5xl': '0px 0px 0px rgba(255, 255, 255)',
+        /* '5xl': '0px 0px 0px rgba(255, 255, 255)', */
       },
       colors: {
         "dark-gray": "#121212",
@@ -19,7 +19,7 @@ module.exports = {
         "amethyst": "#8473B1",
         offwhite: "#C2C2C2",
         black: "#000000",
-        lilacblue: "#5E80F8",
+        "lilacblue": "#5E80F8",
       },
       fill:{
         gradient1: 'url(#gradient1)',
