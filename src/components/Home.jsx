@@ -13,23 +13,14 @@ const Home = () => {
 
   return (
     <div className="bg-dark-gray h-screen">
-      <div className=" text-4xl flex justify-center space-x-16 pt-6 pb-4">
-        <button className="text-lilacblue drop-shadow-4xl hover:text-blue-600">HOME</button>
-        <button className="text-offwhite drop-shadow-5xl hover:text-gray-400">ABOUT</button>
-        <button className="text-offwhite drop-shadow-5xl hover:text-gray-400">SKILLS</button>
-        <button className="text-offwhite drop-shadow-5xl hover:text-gray-400">PROJECTS</button>
-        <button className="text-offwhite drop-shadow-5xl hover:text-gray-400">RESUME</button>
-        <button className="text-offwhite drop-shadow-5xl hover:text-gray-400">CONTACT</button>
-      </div>
-
-      <p className="flex flex-col text-3xl md:text-8xl text-stone-gray drop-shadow-3xl items-center">SOFTWARE ENGINEER</p>
      
+      <p className="flex flex-col text-3xl md:text-8xl text-stone-gray drop-shadow-3xl items-center">SOFTWARE ENGINEER</p>
       
       <div className="grid grid-cols-1">
         <div>
           <motion.img
             src={leftpanel1.src} 
-            className="absolute h-mdoutpanel ml-leftoutpanel mt-10"
+            className="absolute h-mdoutpanel ml-leftoutpanel mt-8"
             initial={{x: 80, opacity: 0}}
             animate={{x: 0, opacity: 1}}
             transition={{
@@ -39,7 +30,7 @@ const Home = () => {
           />
           <motion.img
             src={leftpanel2.src} 
-            className="absolute z-25 h-mdmidpanel ml-leftmidpanel mt-6"
+            className="absolute z-25 h-mdmidpanel ml-leftmidpanel mt-4"
             initial={{x: 100, opacity: 0}}
             animate={{x: 0, opacity: 1}}
             transition={{
@@ -49,7 +40,7 @@ const Home = () => {
           />
           <motion.img
             src={leftpanel3.src} 
-            className="absolute z-50 h-mdinpanel ml-leftinpanel mt-2"
+            className="absolute z-50 h-mdinpanel ml-leftinpanel"
             initial={{x: 100, opacity: 0}}
             animate={{x: 0, opacity: 1}}
             transition={{
@@ -58,7 +49,7 @@ const Home = () => {
             }}
           />
           <motion.img
-            src={rightpanel1.src} className="absolute h-mdoutpanel ml-rightoutpanel mt-10"
+            src={rightpanel1.src} className="absolute h-mdoutpanel ml-rightoutpanel mt-8"
             initial={{x: -80, opacity: 0}}
             animate={{x: 0, opacity: 1}}
             transition={{
@@ -68,7 +59,7 @@ const Home = () => {
           />
           <motion.img
             src={rightpanel2.src} 
-            className="absolute z-25 h-mdmidpanel ml-rightmidpanel mt-6"
+            className="absolute z-25 h-mdmidpanel ml-rightmidpanel mt-4"
             initial={{x: -100, opacity: 0}}
             animate={{x: 0, opacity: 1}}
             transition={{
@@ -78,7 +69,7 @@ const Home = () => {
           />
           <motion.img
             src={rightpanel3.src} 
-            className="absolute z-50 h-mdinpanel ml-rightinpanel mt-2"
+            className="absolute z-50 h-mdinpanel ml-rightinpanel"
             initial={{x: -100, opacity: 0}}
             animate={{x: 0, opacity: 1}}
             transition={{
@@ -86,22 +77,22 @@ const Home = () => {
               opacity: {type: 'tween', ease: 'easeOut', duration: 0.75},
             }}
           />
-          <img src={pfp.src} id = "psp" alt="profile pic" className="mx-auto my-10 text-center w-1/4 drop-shadow-3xl" />
+          <img src={pfp.src} id = "psp" alt="profile pic" className="mx-auto my-8 text-center w-1/4 drop-shadow-3xl" />
           
         </div>
       </div>
 
-        <p className="flex flex-col items-center text-4xl md:text-8xl text-amethyst drop-shadow-3xl pb-4">STANLEY LEW</p>
+        <p className="flex flex-col items-center text-4xl md:text-8xl text-amethyst drop-shadow-3xl">STANLEY LEW</p>
         <div className="flex justify-center">
           <button className="z-50 animate-bounce">
             <svg xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53" fill="none">
           <g filter="url(#filter0_d_20_52)">
             <circle cx="26.5" cy="22.5" r="22.5" fill="#8474B1"/>
           </g>
-          <path d="M38.0217 17.5109L26.5109 29.0217L15 17.5109" stroke="#2B2929" stroke-width="4"/>
+          <path d="M38.0217 17.5109L26.5109 29.0217L15 17.5109" stroke="#2B2929" strokeWidth="4"/>
           <defs>
-            <filter id="filter0_d_20_52" x="0" y="0" width="53" height="53" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <filter id="filter0_d_20_52" x="0" y="0" width="53" height="53" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+              <feFlood floodOpacity="0" result="BackgroundImageFix"/>
               <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
               <feOffset dy="4"/>
               <feGaussianBlur stdDeviation="2"/>
@@ -113,7 +104,6 @@ const Home = () => {
           </defs>
             </svg>
           </button>
-          
         </div>
     </div>
     
