@@ -2,6 +2,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import burger from '../../public/images/whitehamburgericon.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from '../app/styles/navbar.module.css';
 
@@ -9,7 +10,9 @@ const Navigation = () => {
     return(
       <Navbar expand = "lg" className="bg-dark-gray pt-4">
         <Container>
-          <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+          <Navbar.Toggle aria-controls="basic-navbar-nav">
+            <img src={burger.src}/>
+          </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className = "flex justify-center space-x-16 text-4xl">
               <Nav.Link href="#home" className={`${styles.homecolor} ${styles.hoverBlue800} drop-shadow-4xl`}>HOME</Nav.Link>
