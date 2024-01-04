@@ -2,7 +2,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import burger from '../../public/images/whitehamburgericon.svg'
+import burger from '../../public/images/whitehamburgericon.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from '../app/styles/navbar.module.css';
 
