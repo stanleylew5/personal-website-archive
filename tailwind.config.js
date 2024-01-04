@@ -14,7 +14,7 @@ module.exports = {
       },
       colors: {
         "dark-gray": "#121212",
-        "stone-gray": "#898787",
+        "stone-gray": "#4A4A4A",
         "navi-blue": "#5E80F8",
         "amethyst": "#8473B1",
         offwhite: "#C2C2C2",
