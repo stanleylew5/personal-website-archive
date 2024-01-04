@@ -1,12 +1,17 @@
 import React from "react";
-import Home from "@/components/Home";
+import HomeFooter from "@/components/HomeFooter";
 import Navigation from "@/components/Navigations";
+import Panels from "@/components/Panels";
+import HomeTitle from "@/components/HomeTitle";
+
 export default function main() {
   return (
     <main>
-      <div>
+      <div className="bg-dark-gray">
         <Navigation/>
-        <Home/>
+        <HomeTitle/>
+        <Panels/>
+        <HomeFooter/>
       </div>  
     </main>
   )
