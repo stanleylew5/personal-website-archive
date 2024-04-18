@@ -1,27 +1,23 @@
 // may or may not use this file we'll see
 export const navigations = [
     {
-        text: "HOME",
-        link: "/#home",
-    },
-    {
-        text: "ABOUT",
+        text: "about",
         link: "/#about",
     },
     {
-        text: "SKILLS",
+        text: "skills",
         link: "/#skills",
     },
     {
-        text: "PROJECTS",
+        text: "projects",
         link: "/#projects",
     },
     {
-        text: "RESUME",
-        link: "/#resume",
+        text: "gallery",
+        link: "/#gallery",
     },
     {
-        text: "CONTACT",
+        text: "contact",
         link: "/#contact",
     },
 ];
