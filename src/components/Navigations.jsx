@@ -3,24 +3,26 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import burger from '../../public/images/whitehamburgericon.svg';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import styles from '../app/styles/navbar.module.css';
-
+import { FaBars } from "react-icons/fa";
+import { navigations } from "../app/data/navigations.js";
 const Navigation = () => {
     return(
-      <Navbar expand = "lg" className="bg-dark-gray pt-4">
+      <Navbar expand = "lg" className="bg-stanleypw-gray-100 w-full" fixed="top">
         <Container>
-          <Navbar.Toggle aria-controls="basic-navbar-nav">
-            <img src={burger.src} alt = "white burger icon"/>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" className="text-stanleypw-gray-200">
+            <FaBars className=" text-stanleypw-gray-200 text-xl" />
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className = "flex justify-center space-x-16 text-4xl">
-              <Nav.Link href="#home" className={`${styles.offwhite} drop-shadow-4xl`}>HOME</Nav.Link>
-              <Nav.Link href="#about" className={ `${styles.offwhite} drop-shadow-4xl`}>ABOUT</Nav.Link>
-              <Nav.Link href="#skills" className={ `${styles.offwhite} drop-shadow-4xl`}>SKILLS</Nav.Link>
-              <Nav.Link href="#projects" className={ `${styles.offwhite} drop-shadow-4xl`}>PROJECTS</Nav.Link>
-              <Nav.Link href="#resume" className={ `${styles.offwhite} drop-shadow-4xl`}>RESUME</Nav.Link>
-              <Nav.Link href="#contact" className={ `${styles.offwhite} drop-shadow-4xl`}>CONTACT</Nav.Link>
+            <Nav className = "space-x-4 text-3xl">
+            {navigations.map((navigation, index) => (
+              <Nav.Link
+                key={index}
+                className="text-stanleypw-gray-200 font-bold"
+                href={navigation.link}
+              >
+                {navigation.text}
+              </Nav.Link>
+            ))}
             </Nav>
           </Navbar.Collapse>
         </Container>

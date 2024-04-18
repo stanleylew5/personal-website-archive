@@ -1,6 +1,8 @@
-import { Lalezar } from 'next/font/google'
+import { Lato } from 'next/font/google'
+import "bootstrap/dist/css/bootstrap.min.css";
 import './globals.css'
-const inter = Lalezar({ subsets: ['latin'], weight: '400' })
+import Navigation from '@/components/Navigations';
+const inter = Lato({ subsets: ['latin'], weight: '400' })
 
 export const metadata = {
   title: 'Stanley Lew',
@@ -10,7 +12,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Navigation/>
+        <div>
+          {children}
+        </div>
+      </body>
     </html>
   )
 }
