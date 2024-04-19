@@ -13,9 +13,11 @@ module.exports = {
         /* '5xl': '0px 0px 0px rgba(255, 255, 255)', */
       },
       colors: {
-        stanleypw:{
+        stanley:{
           "gray-100": "#272727",
-          "gray-200": "#C1C1C1",
+          "white-100": "#C1C1C1",
+          "black-100": "#2A2A2A",
+          "black-200": "#111111",
         },
         "dark-gray": "#121212",
         "stone-gray": "#4A4A4A",
