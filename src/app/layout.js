@@ -1,7 +1,8 @@
 import { Lato } from 'next/font/google'
-import "bootstrap/dist/css/bootstrap.min.css";
 import './globals.css'
 import Navigation from '@/components/Navigations';
+import "bootstrap/dist/css/bootstrap.min.css";
+
 const inter = Lato({ subsets: ['latin'], weight: '400' })
 
 export const metadata = {
