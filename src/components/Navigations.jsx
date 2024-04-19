@@ -13,7 +13,7 @@ const Navigation = () => {
         <Navbar.Brand className="inline-flex ml-4">
         <Image src={psp} className="w-8 md:w-12 my-1" alt="psp-logo"/>
           <Link
-            className="pl-4 text-stanley-white-100 text-xl md:text-3xl font-bold flex items-center no-underline"
+            className="pl-4 hover:text-stanley-gray-400 text-stanley-white-100 text-xl md:text-3xl font-bold flex items-center no-underline"
             href="/"
           >
             stanley lew
@@ -27,7 +27,7 @@ const Navigation = () => {
           {navigations.map((navigation, index) => (
             <Nav.Link
               key={index}
-              className="!text-stanley-white-100 !font-bold !pr-8"
+              className="hover:!text-stanley-gray-400 !text-stanley-white-100 !font-bold !pr-8"
               href={navigation.link}
             >
               {navigation.text}
