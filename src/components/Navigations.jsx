@@ -2,13 +2,25 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import burger from '../../public/images/whitehamburgericon.svg';
 import { FaBars } from "react-icons/fa";
 import { navigations } from "../app/data/navigations.js";
+import psp from "../../public/images/psp.png"
+import Image from 'next/image.js';
+import Link from 'next/link.js';
+
 const Navigation = () => {
     return(
-      <Navbar expand = "lg" className="bg-stanleypw-gray-100 w-full" fixed="top">
+      <Navbar expand="lg" className="bg-stanleypw-gray-100 w-full p-0 flex" fixed="top">
         <Container>
+          <Navbar.Brand className="inline-flex">
+          <Image src={psp} className="w-12 my-1" alt="psp-logo"/>
+            <Link
+              className="pl-4 text-stanleypw-gray-200 text-3xl font-bold flex items-center no-underline"
+              href="/"
+            >
+              stanley lew
+            </Link>
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" className="text-stanleypw-gray-200">
             <FaBars className=" text-stanleypw-gray-200 text-xl" />
           </Navbar.Toggle>
@@ -17,7 +29,7 @@ const Navigation = () => {
             {navigations.map((navigation, index) => (
               <Nav.Link
                 key={index}
-                className="text-stanleypw-gray-200 font-bold"
+                className="!text-stanleypw-gray-200 !font-bold"
                 href={navigation.link}
               >
                 {navigation.text}
