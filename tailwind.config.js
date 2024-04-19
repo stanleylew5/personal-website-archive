@@ -12,9 +12,26 @@ module.exports = {
         '4xl': '0px 0px 4px rgba(0, 0, 0)',
         /* '5xl': '0px 0px 0px rgba(255, 255, 255)', */
       },
+      keyframes:{
+        animatedgradient: {
+          '0%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+          '100%': { backgroundPosition: '0% 50%' },
+        },
+      },
+      backgroundSize: {
+        '300%': '300%',
+      },
+      animation:{
+        gradient: 'animatedgradient 4s linear infinite alternate',
+      },
       colors: {
         stanley:{
           "gray-100": "#272727",
+          "gray-200": "#E7E7E7",
+          "gray-300": "#999999",
+          "gray-400": "#9C9C9C",
+          "gray-500": "#A6A6A6",
           "white-100": "#C1C1C1",
           "black-100": "#2A2A2A",
           "black-200": "#111111",
