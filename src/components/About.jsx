@@ -29,7 +29,7 @@ const About = () => {
           Software Engineer
         </p>
         <div className="absolute md:bottom-0 left-0 w-full md:translate-y-12">
-          <Image src={hill} alt={"hill"}/>
+          <Image src={hill} alt={"hill"} className="w-full"/>
         </div>
       </div>
     );  

@@ -1,6 +1,9 @@
+import Title from "./Title";
 const Skills = () => {
   return(
-    <div>Hello World!</div>
+    <div>
+      <Title text="Skills"/>
+    </div>
   );  
 };
 export default Skills;

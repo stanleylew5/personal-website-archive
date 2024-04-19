@@ -1,13 +1,13 @@
 import React from "react";
+import Skills from "@/components/Skills";
 import Footer from "@/components/Footer";
 import Panels from "@/components/Panels";
-import HomeTitle from "@/components/HomeTitle";
 import About from "@/components/About";
 const Home = () => {
   return (
     <div>
       <About/>
-      {/* <HomeTitle/> */}
+      <Skills/>
       {/* <Panels/> */}
       {/* <Footer/> */}
     </div>  
