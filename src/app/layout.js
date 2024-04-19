@@ -2,6 +2,7 @@ import { Lato } from 'next/font/google'
 import './globals.css'
 import Navigation from '@/components/Navigations';
 import "bootstrap/dist/css/bootstrap.min.css";
+import scrollstyles from '../app/styles/scrollbar.css'
 
 const inter = Lato({ subsets: ['latin'], weight: '400' })
 
