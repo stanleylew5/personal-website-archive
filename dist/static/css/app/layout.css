@@ -546,6 +546,12 @@ video {
 .m-16 {
   margin: 4rem;
 }
+.m-0 {
+  margin: 0px;
+}
+.\!m-0 {
+  margin: 0px !important;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -587,6 +593,12 @@ video {
 .mt-\[-8\.2\%\] {
   margin-top: -8.2%;
 }
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+.mb-0 {
+  margin-bottom: 0px;
+}
 .flex {
   display: flex;
 }
@@ -622,6 +634,12 @@ video {
 }
 .w-full {
   width: 100%;
+}
+.w-10 {
+  width: 2.5rem;
+}
+.w-8 {
+  width: 2rem;
 }
 @keyframes bounce {
 
@@ -683,6 +701,22 @@ video {
 .p-0 {
   padding: 0px;
 }
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.\!px-0 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
 .pl-4 {
   padding-left: 1rem;
 }
@@ -691,6 +725,15 @@ video {
 }
 .pt-16 {
   padding-top: 4rem;
+}
+.pr-8 {
+  padding-right: 2rem;
+}
+.\!pr-8 {
+  padding-right: 2rem !important;
+}
+.text-center {
+  text-align: center;
 }
 .text-3xl {
   font-size: 1.875rem;
@@ -816,9 +859,25 @@ body {
     width: 100%;
   }
 
+  .md\:w-12 {
+    width: 3rem;
+  }
+
   .md\:text-8xl {
     font-size: 6rem;
     line-height: 1;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .lg\:ml-auto {
+    margin-left: auto;
   }
 }
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************!*\
