@@ -2,16 +2,15 @@ import React from "react";
 import Footer from "@/components/Footer";
 import Panels from "@/components/Panels";
 import HomeTitle from "@/components/HomeTitle";
-
+import About from "@/components/About";
 const Home = () => {
   return (
-    <main>
-      <div className="bg-dark-gray">
-        {/* <HomeTitle/> */}
-        {/* <Panels/> */}
-        {/* <Footer/> */}
-      </div>  
-    </main>
+    <div>
+      <About/>
+      {/* <HomeTitle/> */}
+      {/* <Panels/> */}
+      {/* <Footer/> */}
+    </div>  
   )
 }
 export default Home;
