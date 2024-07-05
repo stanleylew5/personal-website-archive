@@ -7,16 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
-      dropShadow: {
-        '3xl': '0 12px 4px rgba(0, 0, 0)',
-        '4xl': '0px 0px 4px rgba(0, 0, 0)',
-        /* '5xl': '0px 0px 0px rgba(255, 255, 255)', */
-      },
       keyframes:{
         animatedgradient: {
           '0%': { backgroundPosition: '0% 50%' },
           '50%': { backgroundPosition: '100% 50%' },
           '100%': { backgroundPosition: '0% 50%' },
+        },
+        spin: {
+          from: { transform: 'rotate(0deg)' },
+          to: { transform: 'rotate(360deg)' },
         },
       },
       backgroundSize: {
@@ -24,9 +23,11 @@ module.exports = {
       },
       animation:{
         gradient: 'animatedgradient 4s linear infinite alternate',
+        spin: 'spin 8s linear infinite',
       },
       colors: {
         stanley:{
+          "gray-000": "#868686",
           "gray-100": "#A6A6A6",
           "gray-200": "#C1C1C1",
           "gray-300": "#272727",

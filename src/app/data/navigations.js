@@ -1,10 +1,6 @@
 // may or may not use this file we'll see
 export const navigations = [
     {
-        text: "about",
-        link: "/#about",
-    },
-    {
         text: "skills",
         link: "/#skills",
     },
@@ -13,11 +9,7 @@ export const navigations = [
         link: "/#projects",
     },
     {
-        text: "gallery",
-        link: "/#gallery",
-    },
-    {
-        text: "contact",
-        link: "/#contact",
+        text: "contacts",
+        link: "/#contacts",
     },
 ];
