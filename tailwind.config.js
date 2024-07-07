@@ -22,7 +22,7 @@ module.exports = {
         '300%': '300%',
       },
       animation:{
-        gradient: 'animatedgradient 4s linear infinite alternate',
+        gradient: 'animatedgradient 6s linear infinite alternate',
         spin: 'spin 8s linear infinite',
       },
       colors: {

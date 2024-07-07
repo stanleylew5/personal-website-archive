@@ -28,7 +28,7 @@ const Navigation = () => {
             <Nav.Link
               key={index}
               className="hover:!text-stanley-gray-000 !text-stanley-gray-100 !font-bold !pr-8"
-              href={navigation.link}
+              href={navigation.link} passHref
             >
               {navigation.text}
             </Nav.Link>

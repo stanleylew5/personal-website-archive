@@ -2,14 +2,14 @@
 export const navigations = [
     {
         text: "skills",
-        link: "/#skills",
+        link: "#skills",
     },
     {
         text: "projects",
-        link: "/#projects",
+        link: "#projects",
     },
     {
         text: "contacts",
-        link: "/#contacts",
+        link: "#contacts",
     },
 ];
