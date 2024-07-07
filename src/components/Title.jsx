@@ -3,7 +3,7 @@ import gear1 from "../../public/images/gear1.svg";
 import Image from "next/image";
 const Title = ({text}) => {
     return(
-        <div>
+        <div className="z-50">
             <p className="text-7xl text-center text-stanley-white-100 font-bold tracking-widest">{text}</p>
             <div className="flex justify-center">
                 <div className="inline-flex">

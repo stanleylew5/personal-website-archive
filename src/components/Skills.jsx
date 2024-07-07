@@ -1,6 +1,6 @@
 
 import Image from "next/image";
-import Title from "./Title";
+import Title from "./Title.jsx";
 import hill2 from "../../public/images/hill2.svg";
 import { SiCplusplus } from "react-icons/si";
 import { SiPython } from "react-icons/si";
@@ -14,9 +14,10 @@ import { TbBrandFramerMotion } from "react-icons/tb";
 import { SiGit } from "react-icons/si";
 import { SiGithub } from "react-icons/si";
 import { SiFigma } from "react-icons/si";
+
 const Skills = () => {
   return(
-    <div>
+    <div className="bg-stanley-gray-400">
       <Image src={hill2} alt="alt2"/>
       <div className="absolute justify-center bottom-[-40%] left-[40%]">
         <Title text={"Skills"} id="skills"/>

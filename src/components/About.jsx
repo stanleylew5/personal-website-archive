@@ -27,7 +27,7 @@ const About = () => {
          initial={{ opacity: 0, y: -15 }}
          animate={{ opacity: 1, y: 0 }}
          transition={{ duration: 2 }}
-        className="absolute bottom-[8%] right-[24%] z-50 pt-24 pb-12 md:pt-44 text-4xl md:text-7xl pr-16 font-bold bg-clip-text bg-gradient-to-r from-stanley-gray-100 to-stanley-purple-400 animate-gradient bg-300% text-transparent"
+        className="absolute bottom-[8%] right-[24%] z-50 pt-24 pb-12 md:pt-44 text-4xl md:text-7xl pr-16 font-bold text-stanley-gray-100"
       >
         Software Engineer
       </motion.p>
