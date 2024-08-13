@@ -7,32 +7,32 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 const About = () => {
     return(
-      <div className=" bg-stanley-gray-300">
-        <Image src={gear2} alt="gear2" className="absolute animate-spin top-[47%] left-[14%] md:w-[7.3%]"/>
-        <Image src={gear3} alt="gear3" className="absolute animate-spin top-[38%] left-[3%] md:w-[10%]"/>
-        <Image src={gear4} alt="gear4" className="absolute animate-spin top-[16%] left-[13%] w-[11%] md:w-[16.5%]"/>
+      <div className="bg-stanley-gray-300 h-fit md:h-screen">
+        <Image src={gear2} alt="gear2" className="absolute animate-spin top-[29vh] md:top-[47vh] left-[16vw] w-[7vw]"/>
+        <Image src={gear3} alt="gear3" className="absolute animate-spin top-[26vh] md:top-[38vh] left-[5vw] w-[10vw]"/>
+        <Image src={gear4} alt="gear4" className="absolute animate-spin top-[20vh] md:top-[16vh] left-[15vw] w-[16vw]"/>
         <motion.p
-         initial={{ opacity: 0, y: -15 }}
-         animate={{ opacity: 1, y: 0 }}
-         transition={{ duration: 2 }}
-        className="pt-24 pb-12 md:pt-44 text-3xl md:text-7xl pr-8 md:pr-16 font-bold  bg-clip-text text-right bg-gradient-to-r from-stanley-gray-100 to-stanley-purple-400 animate-gradient bg-300% text-transparent"
-      >
-        Hello, I'm Stanley Lew
-      </motion.p>
-      <p className="w-1/2 ml-auto text-right text-lg md:text-2xl text-stanley-gray-100 pr-4 md:pr-16 font-semibold">
-        I am a second-year studying computer <br />science at The University of California, Riverside.
-      </p>
+         initial={{ opacity: 0, x: 20 }}
+         animate={{ opacity: 1, x: 0 }}
+         transition={{ duration: 1.5 }}
+         className="pt-[10vh] md:pt-[20vh] pb-[2vh] md:pb-[8vh] text-3xl md:text-7xl pr-8 md:pr-16 font-bold  bg-clip-text text-right bg-gradient-to-r from-stanley-gray-100 to-stanley-purple-400 animate-gradient bg-300% text-transparent"
+        >
+          Hello, I'm Stanley Lew
+        </motion.p>
+        <p className="w-2/3 md:w-1/3 ml-auto text-right text-[3.5vw] md:text-2xl text-stanley-gray-100 pr-4 md:pr-16 font-semibold">
+          I am a second-year studying computer science at The University of California, Riverside.
+        </p>
 
         <motion.p
-         initial={{ opacity: 0, y: -15 }}
-         animate={{ opacity: 1, y: 0 }}
-         transition={{ duration: 2 }}
-        className="absolute bottom-[8%] right-[24%] z-50 pt-24 pb-12 md:pt-44 text-4xl md:text-7xl pr-16 font-bold text-stanley-gray-100"
-      >
-        Software Engineer
-      </motion.p>
-        <div className=" md:bottom-0 left-0 w-full md:translate-y-16">
-          <Image src={hill} alt={"hill"} className="w-full"/>
+         initial={{ opacity: 0, x: -20 }}
+         animate={{ opacity: 1, x: 0 }}
+         transition={{ duration: 1.5 }}
+         className="absolute bottom-[55%] md:bottom-[10%] right-[0vw] md:right-[20vw] z-50 text-[8vw] md:text-[6vw] pr-16 font-bold text-stanley-gray-100"
+        >
+          Software Engineer
+        </motion.p>
+        <div className="static mt-[10vh] md:mt-0 md:absolute bottom-0">
+          <Image src={hill} alt={"hill"} className="w-screen"/>
         </div>
       </div>
     );  

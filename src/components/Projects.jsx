@@ -5,7 +5,7 @@ const Projects = () => {
     return(
       <div className="bg-stanley-gray-400">
         <Image src={hill3} alt="hill3"/>
-        <div className="-mt-48 z-25">
+        <div className="">
           <Title text={"Projects"}/>
         </div>
       </div>

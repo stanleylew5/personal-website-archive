@@ -4,7 +4,7 @@ import Projects from "@/components/Projects";
 const Home = () => {
   return (
     <div>
-      <About/>
+      <About/>  
       <Skills/>
       <Projects/>
     </div>  
