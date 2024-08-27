@@ -41,23 +41,14 @@ const About = () => {
          initial={{ opacity: 0, x: 20 }}
          animate={{ opacity: 1, x: 0 }}
          transition={{ duration: 0.5, delay: 0.2 }}
-         className="w-2/3 md:w-1/3 ml-auto text-right text-[3.5vw] md:text-2xl text-stanley-gray-100 pr-4 md:pr-16 font-semibold">
+         className="w-7/12 md:w-1/3 ml-auto text-right text-[3.5vw] md:text-2xl text-stanley-gray-100 pr-4 md:pr-16 font-semibold">
           I am a second-year studying computer science at The University of California, Riverside.
-        </motion.p>
-
-        <motion.p
-         initial={{ opacity: 0, x: -20 }}
-         animate={{ opacity: 1, x: 0 }}
-         transition={{ duration: 0.5, delay: 0.3 }}
-         className="absolute bottom-[50%] md:bottom-[10%] right-[0vw] md:right-[20vw] z-50 text-[8vw] md:text-[6vw] pr-16 font-bold text-stanley-gray-100"
-        >
-          Software Engineer
         </motion.p>
         <motion.div 
          initial={{ opacity: 0}}
          animate={{ opacity: 1}}
          transition={{ duration: 0.5 }}
-         className="static mt-[10vh] md:mt-0 md:absolute bottom-0">
+         className="mt-[10vh] md:mt-0 md:absolute bottom-0 z-1">
           <Image src={hill} alt={"hill"} className="w-screen"/>
         </motion.div>
       </div>

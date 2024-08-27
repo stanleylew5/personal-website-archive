@@ -7,7 +7,7 @@ const inter = Lato({ subsets: ['latin'], weight: '400' })
 
 export const metadata = {
   title: 'Stanley Lew',
-  description: 'Personal Portfolio=',
+  description: 'Personal Portfolio',
 }
 
 export default function RootLayout({ children }) {
