@@ -17,10 +17,18 @@ const Skills = () => {
       >
         <Image src={hill2} alt="alt2" className="w-screen -translate-y-[2vh] md:-translate-y-[7vh]"/>
         </motion.div>
-      <div className="flex justify-center translate-y-[-3vh] md:translate-y-[-10vh]">
-        <Title text={"Skills"} id="skills"/>
+      <div className="flex justify-center translate-y-[-3vh] md:translate-y-[-10vh]" id="skills">
+        <Title text={"Skills"}/>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 w-3/4 mx-auto pt-[1vh]">
+      <motion.div 
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{
+        type: "tween",
+        duration: 0.5,
+        delay: 0.1,
+      }}
+      className="grid grid-cols-1 md:grid-cols-3 w-3/4 mx-auto pt-[1vh]">
         <div className="flex flex-col items-center">
           <p className="text-stanley-white-100 text-center underline text-3xl md:text-5xl pb-2">Languages</p>
           <div className="justify-center">
@@ -54,7 +62,7 @@ const Skills = () => {
             ))}
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );  
 };

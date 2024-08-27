@@ -8,7 +8,7 @@ const ProjectRight = ({ image, name, description, icons, github, website }) => {
             <div className="col-span-3 bg-stanley-purple-500 mb-8 mt-2 drop-shadow-projectright">
                 <div className="text-4xl font-bold pt-4 pl-4 tracking-widest">{name}</div>
                 <div className="pt-4 pl-4 text-xl">{description}</div>
-                <div className="absolute bottom-0 inline-flex gap-2 pb-2 pl-3 !text-4xl">{icons}</div>
+                <div className="inline-flex md:absolute md:bottom-0 gap-2 py-12 pb-2 pl-3">{icons}</div>
                 <div className="inline-flex absolute bottom-0 text-3xl right-0 pr-2 pb-2 gap-2">
                     <Link href={github} className="text-stanley-white-100 hover:text-stanley-purple-100" title="Github Link" target="_blank" rel="noopener noreferrer">
                         <FaGithub />

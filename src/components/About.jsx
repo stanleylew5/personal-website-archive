@@ -11,12 +11,24 @@ const About = () => {
         <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.5, delay: 0.6 }}
         >
-        <Image src={gear2} alt="gear2" className="absolute animate-spin top-[29vh] md:top-[47vh] left-[16vw] w-[7vw]"/>
+          <Image src={gear2} alt="gear2" className="absolute animate-spin top-[29vh] md:top-[47vh] left-[16vw] w-[7vw]"/>
         </motion.div>
-        <Image src={gear3} alt="gear3" className="absolute animate-spin top-[26vh] md:top-[38vh] left-[5vw] w-[10vw]"/>
-        <Image src={gear4} alt="gear4" className="absolute animate-spin top-[20vh] md:top-[16vh] left-[15vw] w-[16vw]"/>
+        <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+        >
+          <Image src={gear3} alt="gear3" className="absolute animate-spin top-[26vh] md:top-[38vh] left-[5vw] w-[10vw]"/>
+        </motion.div>
+        <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5}}
+        >
+          <Image src={gear4} alt="gear4" className="absolute animate-spin top-[20vh] md:top-[16vh] left-[15vw] w-[16vw]"/>
+        </motion.div>
         <motion.p
          initial={{ opacity: 0, x: 20 }}
          animate={{ opacity: 1, x: 0 }}
@@ -36,7 +48,7 @@ const About = () => {
         <motion.p
          initial={{ opacity: 0, x: -20 }}
          animate={{ opacity: 1, x: 0 }}
-         transition={{ duration: 0.5 }}
+         transition={{ duration: 0.5, delay: 0.3 }}
          className="absolute bottom-[50%] md:bottom-[10%] right-[0vw] md:right-[20vw] z-50 text-[8vw] md:text-[6vw] pr-16 font-bold text-stanley-gray-100"
         >
           Software Engineer
