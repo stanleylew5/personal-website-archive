@@ -1,15 +1,23 @@
+"use client";
 import Image from "next/image";
 import Title from "./Title.jsx";
 import hill2 from "../../public/images/hill2.svg";
 import { frameworks } from "../data/frameworks.js";
 import { languages } from "../data/languages.js";
 import { others } from "../data/others.js";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   return(
     <div className="bg-stanley-gray-400">
+      <motion.div
+      initial={{ opacity: 0}}
+      animate={{ opacity: 1}}
+      transition={{ duration: 0.5 }}
+      >
         <Image src={hill2} alt="alt2" className="w-screen -translate-y-[2vh] md:-translate-y-[7vh]"/>
-      <div className="flex justify-center translate-y-[-3vh] md:translate-y-[-15vh]">
+        </motion.div>
+      <div className="flex justify-center translate-y-[-3vh] md:translate-y-[-10vh]">
         <Title text={"Skills"} id="skills"/>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 w-3/4 mx-auto pt-[1vh]">
