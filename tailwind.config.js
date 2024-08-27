@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      dropShadow:{
+        'projectleft':'35px 25px 0px rgba(62, 58, 72, 1)',
+        'projectright':'-35px 25px 0px rgba(62, 58, 72, 1)',
+      },
       keyframes:{
         animatedgradient: {
           '0%': { backgroundPosition: '0% 50%' },
@@ -36,6 +40,7 @@ module.exports = {
           "purple-200": "#7F5D8B",
           "purple-300": "#74638A",
           "purple-400": "#705F86",
+          "purple-500": "#665D6A",
           "white-100": "#E4E4E4",
         },
       },
