@@ -459,9 +459,6 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
-.static {
-  position: static;
-}
 .fixed {
   position: fixed;
 }
@@ -474,9 +471,6 @@ video {
 .bottom-0 {
   bottom: 0px;
 }
-.bottom-\[50\%\] {
-  bottom: 50%;
-}
 .left-\[15vw\] {
   left: 15vw;
 }
@@ -488,9 +482,6 @@ video {
 }
 .right-0 {
   right: 0px;
-}
-.right-\[0vw\] {
-  right: 0vw;
 }
 .top-\[20vh\] {
   top: 20vh;
@@ -566,11 +557,11 @@ video {
 .w-11\/12 {
   width: 91.666667%;
 }
-.w-2\/3 {
-  width: 66.666667%;
-}
 .w-3\/4 {
   width: 75%;
+}
+.w-7\/12 {
+  width: 58.333333%;
 }
 .w-8 {
   width: 2rem;
@@ -592,24 +583,6 @@ video {
 }
 .w-screen {
   width: 100vw;
-}
-.w-\[2\/3\] {
-  width: 2/3;
-}
-.w-\[\] {
-  width: ;
-}
-.w-\[7\/12\] {
-  width: 7/12;
-}
-.w-\[4\/12\] {
-  width: 4/12;
-}
-.w-\[1\/3\] {
-  width: 1/3;
-}
-.w-7\/12 {
-  width: 58.333333%;
 }
 .-translate-y-\[2vh\] {
   --tw-translate-y: -2vh;
@@ -647,11 +620,11 @@ video {
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
-.grid-cols-5 {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
@@ -670,12 +643,6 @@ video {
 }
 .gap-4 {
   gap: 1rem;
-}
-.gap-8 {
-  gap: 2rem;
-}
-.gap-16 {
-  gap: 4rem;
 }
 .border-stanley-purple-400 {
   --tw-border-opacity: 1;
@@ -751,14 +718,11 @@ video {
 .pb-\[10vh\] {
   padding-bottom: 10vh;
 }
-.pb-\[13vh\] {
-  padding-bottom: 13vh;
-}
 .pb-\[2vh\] {
   padding-bottom: 2vh;
 }
-.pb-\[5vh\] {
-  padding-bottom: 5vh;
+.pb-\[6vh\] {
+  padding-bottom: 6vh;
 }
 .pb-\[8vh\] {
   padding-bottom: 8vh;
@@ -768,9 +732,6 @@ video {
 }
 .pl-4 {
   padding-left: 1rem;
-}
-.pr-16 {
-  padding-right: 4rem;
 }
 .pr-2 {
   padding-right: 0.5rem;
@@ -802,15 +763,6 @@ video {
 .pt-\[\] {
   padding-top: ;
 }
-.pb-\[4vh\] {
-  padding-bottom: 4vh;
-}
-.pb-\[6vh\] {
-  padding-bottom: 6vh;
-}
-.pb-\[\] {
-  padding-bottom: ;
-}
 .text-center {
   text-align: center;
 }
@@ -833,14 +785,11 @@ video {
   font-size: 3rem;
   line-height: 1;
 }
+.text-\[11vw\] {
+  font-size: 11vw;
+}
 .text-\[3\.5vw\] {
   font-size: 3.5vw;
-}
-.text-\[7vw\] {
-  font-size: 7vw;
-}
-.text-\[8vw\] {
-  font-size: 8vw;
 }
 .text-lg {
   font-size: 1.125rem;
@@ -849,12 +798,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-.text-\[10vw\] {
-  font-size: 10vw;
-}
-.text-\[11vw\] {
-  font-size: 11vw;
 }
 .\!font-bold {
   font-weight: 700 !important;
@@ -886,9 +829,6 @@ video {
 }
 .text-transparent {
   color: transparent;
-}
-.text-\[\] {
-  color: ;
 }
 .underline {
   text-decoration-line: underline;
@@ -951,14 +891,14 @@ video {
   color: rgb(134 134 134 / var(--tw-text-opacity));
 }
 
-.hover\:text-stanley-purple-100:hover {
-  --tw-text-opacity: 1;
-  color: rgb(169 148 194 / var(--tw-text-opacity));
-}
-
 .hover\:text-stanley-gray-200:hover {
   --tw-text-opacity: 1;
   color: rgb(193 193 193 / var(--tw-text-opacity));
+}
+
+.hover\:text-stanley-purple-100:hover {
+  --tw-text-opacity: 1;
+  color: rgb(169 148 194 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px) {
@@ -967,12 +907,6 @@ video {
   }
   .md\:bottom-0 {
     bottom: 0px;
-  }
-  .md\:bottom-\[10\%\] {
-    bottom: 10%;
-  }
-  .md\:right-\[20vw\] {
-    right: 20vw;
   }
   .md\:top-\[16vh\] {
     top: 16vh;
@@ -1018,12 +952,18 @@ video {
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-  .md\:gap-4 {
-    gap: 1rem;
-  }
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+  .md\:pb-\[10vh\] {
+    padding-bottom: 10vh;
+  }
+  .md\:pb-\[13vh\] {
+    padding-bottom: 13vh;
+  }
+  .md\:pb-\[5vh\] {
+    padding-bottom: 5vh;
   }
   .md\:pb-\[8vh\] {
     padding-bottom: 8vh;
@@ -1039,15 +979,6 @@ video {
   }
   .md\:pt-\[2vh\] {
     padding-top: 2vh;
-  }
-  .md\:pb-\[5vh\] {
-    padding-bottom: 5vh;
-  }
-  .md\:pb-\[10vh\] {
-    padding-bottom: 10vh;
-  }
-  .md\:pb-\[13vh\] {
-    padding-bottom: 13vh;
   }
   .md\:text-2xl {
     font-size: 1.5rem;
@@ -1069,15 +1000,12 @@ video {
     font-size: 4.5rem;
     line-height: 1;
   }
-  .md\:text-\[6vw\] {
-    font-size: 6vw;
+  .md\:text-\[7vw\] {
+    font-size: 7vw;
   }
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-  .md\:text-\[7vw\] {
-    font-size: 7vw;
   }
 }
 

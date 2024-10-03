@@ -3,17 +3,18 @@ import witl from "../../public/images/projects/witl.png";
 import artfactory from "../../public/images/projects/artfactory.png";
 import sdd from "../../public/images/projects/sdd.png";
 import ewb from "../../public/images/projects/ewb.png";
-import { SiReact, SiNextdotjs, SiTailwindcss, SiFigma } from "react-icons/si";
+import dashboard from"../../public/images/projects/dashboard.png";
+import { SiReact, SiNextdotjs, SiTailwindcss, SiFigma, SiFirebase, SiPrettier } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
 
 export const projects = [
     {
-        image: portfolio, 
-        name: "Personal Portfolio",
-        description: "A minimalist website displaying my skills, projects, and contact information", 
-        icons: [SiReact, SiNextdotjs, SiTailwindcss, TbBrandFramerMotion, SiFigma],
-        github: "https://github.com/stanleylew5/stanleylew5.github.io",
-        website: "https://stanleylew5.github.io/",
+        image: dashboard, 
+        name: "Productivity Dashboard",
+        description: "Developed a full-stack productivity dashboard that integrates Google Calendar, Weather, and Time Zone Data, offering a centralized hub for daily tools.", 
+        icons: [SiReact, SiNextdotjs, SiTailwindcss, SiFigma, SiFirebase, SiPrettier],
+        github: "https://github.com/stanleylew5/productivity-dashboard",
+        website: "https://github.com/stanleylew5/productivity-dashboard"
     },
     {
         image: witl,
