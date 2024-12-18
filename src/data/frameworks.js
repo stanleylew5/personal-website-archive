@@ -1,4 +1,4 @@
-import { SiReact, SiNextdotjs, SiTailwindcss, SiZod } from "react-icons/si";
+import { SiReact, SiNextdotjs, SiTailwindcss, SiZod, SiFirebase } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
 export const frameworks = [
     {
@@ -8,6 +8,10 @@ export const frameworks = [
     {
         icon: <SiNextdotjs/>,
         name: "Next.js",
+    },
+    {
+        icon: <SiFirebase/>,
+        name: "Firebase",
     },
     {
         icon: <SiTailwindcss/>,
