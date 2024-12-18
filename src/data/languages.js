@@ -1,6 +1,14 @@
-import { SiCplusplus, SiPython, SiHtml5, SiCss3, SiJavascript } from "react-icons/si";
-
+import { SiCplusplus, SiPython, SiHtml5, SiCss3, SiJavascript, SiTypescript } from "react-icons/si";
 export const languages = [
+    {
+        icon: <SiTypescript/>,
+        name: "Typescript",
+    },
+    {
+        icon: <SiJavascript/>,
+        name: "Javascript",
+    },
+
     {
         icon: <SiCplusplus/>,
         name: "C++",
@@ -17,8 +25,5 @@ export const languages = [
         icon: <SiCss3/>,
         name: "CSS3",
     },
-    {
-        icon: <SiJavascript/>,
-        name: "Javascript",
-    },
+    
 ];

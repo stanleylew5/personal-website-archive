@@ -1,4 +1,4 @@
-import { SiGit, SiGithub, SiFigma } from "react-icons/si";
+import { SiGit, SiGithub, SiFigma, SiCmake, SiGooglecloud } from "react-icons/si";
 
 export const others = [
     {
@@ -8,6 +8,14 @@ export const others = [
     {
         icon: <SiGithub/>,
         name: "Github",
+    },
+    {
+        icon: <SiGooglecloud/>,
+        name: "Google Cloud",
+    },
+    {
+        icon: <SiCmake/>,
+        name: "CMake",
     },
     {
         icon: <SiFigma/>,
